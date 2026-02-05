@@ -13,6 +13,7 @@ article {
   background-repeat: no-repeat;
   background-size: 21em;
   background-position: center;
+  position: absolute;
   height: 20em;
   width: 15em;
   display: flex;
@@ -25,6 +26,7 @@ article {
   padding-top: 3em;
   border-radius: 3em;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  animation: spread-cards 0.8s ease-out forwards;
 
   H1 {
       color: black;
@@ -35,4 +37,39 @@ article {
       border-radius: 5em;
       scale: 0.9;
     }
+
+    &#handle-card {
+      translate: -1em 1em;
+      rotate: -30deg;
+      z-index: 10;
+    }
+
+    &#color-card {
+      translate: 1.1em;
+      rotate: 29deg;
+      z-index: 15;
+    }
+
+    &#birthdate-card {
+      translate: -.5em;
+      rotate: -7deg;
+      z-index: 20;
+    }
+
+    &#movie-card {
+      translate: 2em 1.4em;
+      rotate: 22deg;
+      z-index: 35;
+    }
+
+    &#hobby-card {
+      translate: 1.2em;
+      rotate: 8deg;
+      z-index: 30;
+    }
+
+    &#name-card {
+      z-index: 40;
+    }
 }
+
