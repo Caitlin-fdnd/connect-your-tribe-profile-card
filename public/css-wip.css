@@ -43,42 +43,132 @@ article {
   }
 
   &#handle-card {
-    translate: -30em -3em;
-    rotate: -18deg;
+    translate: -1em 1em;
+    rotate: -30deg;
     z-index: 10;
+    animation: handlecardani .7s forwards ease-in-out;
   }
 
   &#art-card {
-    translate: -22em 7em;
-    rotate: 24deg;
+    translate: -2em -2em;
+    rotate: -12deg;
     z-index: 13;
+    animation: artcardani .7s forwards ease-in-out;
   }
 
   &#color-card {
-    translate: 30em -3em;
-    rotate: -29deg;
+    translate: 1.1em;
+    rotate: 29deg;
     z-index: 15;
+    animation: colorcardani .7s forwards ease-in-out;
   }
 
   &#birthdate-card {
-    translate: -12em -4em;
+    translate: -.5em;
     rotate: -7deg;
     z-index: 20;
+    animation: birthdatecardani .7s forwards ease-in-out;
   }
 
   &#movie-card {
-    translate: 13em -3em;
+    translate: 2em 1.4em;
     rotate: 22deg;
     z-index: 35;
+    animation: moviecardani .7s forwards ease-in-out;
   }
 
   &#hobby-card {
-    translate: 19em 5em;
+    translate: 1.2em;
     rotate: 8deg;
     z-index: 30;
+    animation: hobbycardani .7s forwards ease-in-out;
   }
 
   &#name-card {
     z-index: 40;
   }
+}
+
+@keyframes handlecardani {
+
+  0% {
+    translate: -1em 1em;
+    rotate: -30deg;
+  }
+
+  100% {
+    translate: -30em -3em;
+    rotate: -18deg;
+  }
+
+}
+
+@keyframes artcardani {
+
+  0% {
+    translate: -2em -2em;
+    rotate: -12deg;
+  }
+
+  100% {
+    translate: -22em 7em;
+    rotate: 24deg;
+  }
+
+}
+
+@keyframes colorcardani {
+
+  0% {
+    translate: 1.1em;
+    rotate: 29deg;
+  }
+
+  100% {
+    translate: 30em -3em;
+    rotate: -29deg;
+  }
+
+}
+
+@keyframes birthdatecardani {
+
+  0% {
+    translate: -.5em;
+    rotate: -7deg;
+  }
+
+  100% {
+    translate: -12em -4em;
+    rotate: -7deg;
+  }
+
+}
+
+@keyframes moviecardani {
+
+  0% {
+    translate: 2em 1.4em;
+    rotate: 22deg;
+  }
+
+  100% {
+    translate: 13em -3em;
+    rotate: 22deg;
+  }
+
+}
+
+@keyframes hobbycardani {
+
+  0% {
+    translate: 1.2em;
+    rotate: 8deg;
+  }
+
+  100% {
+    translate: 19em 5em;
+    rotate: 8deg;
+  }
+
 }
