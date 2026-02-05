@@ -1,33 +1,38 @@
 {% render 'partials/head.liquid' %}
 
 <article id="name-card">  
-<img src= "./avatar.jpg" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./avatar.jpg" alt="selfie!" class="card-img">
 <H1> {{ person.name }} </H1>
 </article>
 
 <article id="handle-card"> 
-<img src= "./github.png" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./github.png" alt="selfie!" class="card-img">
 <H1> {{ person.github_handle }} </H1>
 </article>
 
 <article id="birthdate-card"> 
-<img src= "./baby-me.jpg" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./baby-me.jpg" alt="selfie!" class="card-img">
 <H1> {{ person.birthdate }} </H1>
 </article>
 
 <article id="hobby-card"> 
-<img src= "./muziek.jpg" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./muziek.jpg" alt="selfie!" class="card-img">
 <H1> {{ person.custom.hobby }} </H1>
 </article>
 
 <article id="color-card"> 
-<img src= "./avatar.jpg" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./paars.jpg" alt="selfie!" class="card-img">
 <H1> {{ person.custom.favorite_color }} </H1>
 </article>
 
 <article id="movie-card"> 
-<img src= "./movie.jpeg" alt="selfie!" class="card-img" width="150px" height="190px">
+<img src= "./movie.jpg" alt="selfie!" class="card-img">
 <H1> {{ person.custom.favorite_movie }} </H1>
+</article>
+
+<article id="art-card"> 
+<img src= "./kunst.jpg" alt="selfie!" class="card-img">
+<H1> {{ person.custom.interest }} </H1>
 </article>
 
 {% render 'partials/foot.liquid' %}

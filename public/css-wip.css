@@ -1,21 +1,22 @@
-
-
 body {
   display: flex;
   flex-direction: column;
   padding: 1em;
-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: url(./bg-img.jpg);
+  background-size: cover;
 }
 
 article {
   background-color: rgb(255, 253, 249);
   background-image: url(./card1.png);
   background-repeat: no-repeat;
-  background-size: 21em;
+  background-size: 19em;
   background-position: center;
   position: absolute;
-  height: 20em;
-  width: 15em;
+  height: 19em;
+  width: 13em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,53 +24,61 @@ article {
   margin-top: 3em;
   text-align: center;
   padding: .15em;
-  padding-top: 3em;
+  padding-top: 2em;
   border-radius: 3em;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   animation: spread-cards 0.8s ease-out forwards;
 
   H1 {
-      color: black;
-      margin-top: .01em;
-    }
+    color: black;
+    margin-top: .01em;
+    font-size: 17pt;
+  }
 
-    img {
-      border-radius: 5em;
-      scale: 0.9;
-    }
+  img {
+    border-radius: 5em;
+    scale: 0.9;
+    width: 130px;
+    height: 170px;
+  }
 
-    &#handle-card {
-      translate: -1em 1em;
-      rotate: -30deg;
-      z-index: 10;
-    }
+  &#handle-card {
+    translate: -30em -3em;
+    rotate: -18deg;
+    z-index: 10;
+  }
 
-    &#color-card {
-      translate: 1.1em;
-      rotate: 29deg;
-      z-index: 15;
-    }
+  &#art-card {
+    translate: -22em 7em;
+    rotate: 24deg;
+    z-index: 13;
+  }
 
-    &#birthdate-card {
-      translate: -.5em;
-      rotate: -7deg;
-      z-index: 20;
-    }
+  &#color-card {
+    translate: 30em -3em;
+    rotate: -29deg;
+    z-index: 15;
+  }
 
-    &#movie-card {
-      translate: 2em 1.4em;
-      rotate: 22deg;
-      z-index: 35;
-    }
+  &#birthdate-card {
+    translate: -12em -4em;
+    rotate: -7deg;
+    z-index: 20;
+  }
 
-    &#hobby-card {
-      translate: 1.2em;
-      rotate: 8deg;
-      z-index: 30;
-    }
+  &#movie-card {
+    translate: 13em -3em;
+    rotate: 22deg;
+    z-index: 35;
+  }
 
-    &#name-card {
-      z-index: 40;
-    }
+  &#hobby-card {
+    translate: 19em 5em;
+    rotate: 8deg;
+    z-index: 30;
+  }
+
+  &#name-card {
+    z-index: 40;
+  }
 }
-
