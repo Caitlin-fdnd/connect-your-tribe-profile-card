@@ -6,6 +6,9 @@ body {
   overflow: hidden;
   background-image: url(./bg-img.jpg);
   background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9)
 }
 
 article {
@@ -33,6 +36,7 @@ article {
     color: black;
     margin-top: .01em;
     font-size: 17pt;
+    font-style: italic;
   }
 
   img {
@@ -46,48 +50,67 @@ article {
     translate: -1em 1em;
     rotate: -30deg;
     z-index: 10;
-    animation: handlecardani .7s forwards ease-in-out;
   }
 
   &#art-card {
     translate: -2em -2em;
     rotate: -12deg;
     z-index: 13;
-    animation: artcardani .7s forwards ease-in-out;
   }
 
   &#color-card {
     translate: 1.1em;
     rotate: 29deg;
     z-index: 15;
-    animation: colorcardani .7s forwards ease-in-out;
   }
 
   &#birthdate-card {
     translate: -.5em;
     rotate: -7deg;
     z-index: 20;
-    animation: birthdatecardani .7s forwards ease-in-out;
   }
 
   &#movie-card {
     translate: 2em 1.4em;
     rotate: 22deg;
     z-index: 35;
-    animation: moviecardani .7s forwards ease-in-out;
   }
 
   &#hobby-card {
     translate: 1.2em;
     rotate: 8deg;
     z-index: 30;
-    animation: hobbycardani .7s forwards ease-in-out;
   }
 
   &#name-card {
     z-index: 40;
   }
 }
+
+body.spread #handle-card {
+  animation: handlecardani .7s forwards ease-in-out;
+}
+
+body.spread #art-card {
+  animation: artcardani .7s forwards ease-in-out;
+}
+
+body.spread #color-card {
+  animation: colorcardani .7s forwards ease-in-out;
+}
+
+body.spread #birthdate-card {
+  animation: birthdatecardani .7s forwards ease-in-out;
+}
+
+body.spread #movie-card {
+  animation: moviecardani .7s forwards ease-in-out;
+}
+
+body.spread #hobby-card {
+  animation: hobbycardani .7s forwards ease-in-out;
+}
+
 
 @keyframes handlecardani {
 

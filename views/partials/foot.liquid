@@ -1,2 +1,14 @@
   </body>
+
+  <script>
+  const body = document.body;
+
+  body.addEventListener('mouseenter', () => {
+    body.classList.add('spread');
+  });
+
+  body.addEventListener('mouseleave', () => {
+    body.classList.remove('spread');
+  });
+</script>
 </html>
